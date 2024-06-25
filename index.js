@@ -5,7 +5,7 @@ const port = 3000
 app.get('/', (req, res)=> { 
     name=req.query['name']?req.query['name']:'John Doe'
     res.send({
-        message: 'hello, ' + name
+        message: 'Hello, ' + name
     })
 });
 
