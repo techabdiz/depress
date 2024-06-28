@@ -2,10 +2,9 @@ const express = require('express')
 const app = express()
 
 const port = 3000
-app.get('/', (req, res)=> { 
-    name=req.query['name']?req.query['name']:'John Doe'
+app.get('/', (req, res)=> {
     res.send({
-        message: 'Hello, ' + name
+        message: 'Hello, ' + req.query['name']||'John Doe'
     })
 });
 
