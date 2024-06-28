@@ -8,6 +8,12 @@ app.get('/', (req, res)=> {
     })
 });
 
+app.get('help', (req, res)=>{
+    res.send({
+        message: 'this is supposed to be the help page :('
+    })
+})
+
 app.listen(port, ()=>{
     console.log('app ready listening to port ' + port)
 })
