@@ -8,7 +8,7 @@ app.get('/', (req, res)=> {
     })
 });
 
-app.get('help', (req, res)=>{
+app.get('/help', (req, res)=>{
     res.send({
         message: 'this is supposed to be the help page :('
     })
